@@ -10,26 +10,34 @@ export default function Home() {
         {/* Hero */}
         <section className="relative flex min-h-[720px] flex-col justify-center bg-surface-container-lowest px-8 md:px-24">
           <div className="max-w-6xl">
-            <div className="mb-8 flex items-center space-x-4">
+            <div className="mb-4 flex items-center space-x-4">
               <span className="h-px w-12 bg-secondary" />
               <span className="font-label text-[11px] text-on-surface-variant">
                 Editorial Marketing Agency
               </span>
             </div>
-            <h1 className="mb-12 font-headline text-5xl font-black leading-[0.9] tracking-tight text-primary md:text-8xl">
-              Strategic <span className="text-secondary">Narratives</span>
+            <h1 className="mb-4 font-headline text-4xl font-black leading-[0.95] tracking-tight text-primary md:text-7xl">
+              We Design Brands That Get Noticed
               <br />
-              Defined by Design.
+              <span className="text-secondary">&amp; Get Results.</span>
             </h1>
-            <div className="grid items-end gap-8 md:grid-cols-12">
-              <div className="md:col-span-6">
-                <p className="font-body text-lg leading-relaxed text-on-surface-variant md:text-2xl">
-                  SEICHO is a boutique marketing firm specializing in
-                  high-contrast visual identities and editorial positioning for
-                  industry leaders. We build brands that command authority.
+            <div className="grid items-start gap-10 md:grid-cols-12">
+              <div className="space-y-5 md:col-span-7">
+                <p className="font-body text-base leading-relaxed text-on-surface-variant md:text-lg">
+                  SEICHO is a marketing and graphic design studio focused on
+                  building bold visual identities and high-performing digital
+                  experiences. We simplify complex ideas into clear, strategic
+                  design that attracts attention and drives real business
+                  growth—making sure Namibian brands get the recognition they
+                  deserve.
+                </p>
+                <p className="font-body text-sm leading-relaxed text-on-surface-variant">
+                  Whether it&apos;s branding, campaigns, or corporate content,
+                  every piece is crafted with one goal: to position your brand
+                  with clarity, authority, and impact.
                 </p>
               </div>
-              <div className="flex flex-col gap-4 md:col-span-6 md:flex-row md:justify-end">
+              <div className="flex flex-col gap-4 md:col-span-5 md:flex-row md:justify-end">
                 <a
                   href="/portfolio"
                   className="font-label bg-primary px-10 py-5 text-xs font-bold text-white hover:bg-secondary"
@@ -42,6 +50,43 @@ export default function Home() {
                 >
                   Contact Us
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services / What we do */}
+        <section className="bg-surface-container-low px-8 py-20 md:px-24">
+          <div className="mx-auto max-w-6xl">
+            <h2 className="mb-10 font-headline text-3xl font-bold italic md:text-4xl">
+              Marketing and design engineered for growth.
+            </h2>
+            <div className="grid gap-10 md:grid-cols-3">
+              <div>
+                <h3 className="font-headline text-xl italic">Brand Strategy</h3>
+                <p className="mt-3 font-body text-sm text-on-surface-variant">
+                  Positioning, messaging, and naming built to differentiate you
+                  in saturated markets and drive high-intent leads.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-headline text-xl italic">
+                  Graphic &amp; Digital Design
+                </h3>
+                <p className="mt-3 font-body text-sm text-on-surface-variant">
+                  Visual identity systems, social media graphics, pitch decks,
+                  and campaign creative that stay consistent across every
+                  channel.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-headline text-xl italic">
+                  Performance Marketing
+                </h3>
+                <p className="mt-3 font-body text-sm text-on-surface-variant">
+                  SEO-aware landing pages, email funnels, and content calendars
+                  designed to convert attention into measurable revenue.
+                </p>
               </div>
             </div>
           </div>
@@ -63,12 +108,12 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
             <div className="group cursor-pointer bg-surface-container-low md:col-span-8">
-              <div className="relative aspect-[16/9] overflow-hidden">
+              <div className="relative aspect-[16/9] overflow-hidden bg-black">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUczCTg--cBKbQ_jjJhRTFK3IhogHzzp8sVYmo3Dvl-tt4PiDPX4C71JLhaAXM607WxkbWAVgY0PD7QCj0hoWvRV9ZX1JkYUnJ-qSCQsPR-2dqLl3HjMx1Xc3kXOlqbgouWRyequvXx_y4enWngHgWp5l-27y_6N15K0JUSOrlqRg205bC1mFaKMKY42Zb9i6fgTl4Zeh02mC3tgxUGCc0rYkfQWFQs0r5S4Mi-C5fkeECCCCczjshbahN79rAqmvmc9W9jd3F0Q"
-                  alt="Modern Skyscraper – The Ethereal Collective"
+                  src="/images/portfolio.jpeg"
+                  alt="SEICHO brand strategy and portfolio overview"
                   fill
-                  className="object-cover grayscale transition-transform duration-700 group-hover:scale-105"
+                  className="object-contain grayscale transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
               <div className="flex items-start justify-between pt-8">
@@ -84,12 +129,12 @@ export default function Home() {
             </div>
 
             <div className="group cursor-pointer md:col-span-4 md:mt-16">
-              <div className="relative aspect-[3/4] overflow-hidden bg-surface-container-low">
+              <div className="relative aspect-[3/4] overflow-hidden bg-surface-container-lowest">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_kSMmibK95_l5NGK322gDWSiG--E5XqwUDRe5qDrbx4paCYPWAwa2_2R3Ed_nwtkrdbNRc4qzmbRKk1H0BR8AOrCZLCt8L1NebRQ-VlLEEKJvOSd4Gw9njvjc5DLGp3MN5f64PVymUClSIf5vb37NUuskOviDGOIvH1QR49Xm-6dFjBSuolp3FjtNWjX-COLBgjnXfEGjYreutWGBzHbQtAFZBk1lkcSr54KN90ptaclQFyEOomq9qJ2q1AsNm-u9QedSBmsyAQ"
-                  alt="Minimalist interior – Apex Atelier"
+                  src="/images/logo.jpeg"
+                  alt="SEICHO visual identity logo mark"
                   fill
-                  className="object-cover grayscale transition-transform duration-700 group-hover:scale-105"
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
               <div className="pt-8">
@@ -109,6 +154,65 @@ export default function Home() {
                 Explore Full Portfolio
               </span>
             </a>
+          </div>
+        </section>
+
+        {/* Clients carousel */}
+        <section className="bg-surface px-8 py-20 md:px-24">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-8 flex items-baseline justify-between">
+              <h2 className="font-headline text-2xl italic md:text-3xl">
+                Trusted by ambitious clients.
+              </h2>
+              <p className="hidden font-label text-[10px] text-on-surface-variant md:block">
+                Selected marketing and design partnerships
+              </p>
+            </div>
+            <div className="no-scrollbar overflow-x-hidden py-4">
+              <div className="clients-track flex gap-8">
+                {[
+                  {
+                    src: "/images/371193093_334907355558291_6103337848278641736_n.jpg",
+                    name: "Apex Atelier",
+                  },
+                  {
+                    src: "/images/464820507_18067077709723614_5839465353225522232_n.webp",
+                    name: "Chronos Archive",
+                  },
+                  {
+                    src: "/images/620962502_17996234417907389_757090051739280617_n.webp",
+                    name: "Onyx Digital",
+                  },
+                  {
+                    src: "/images/621447223_18051176726686451_7902291036708653222_n.webp",
+                    name: "Vertex Monomark",
+                  },
+                  {
+                    src: "/images/623430959_17975022389823284_5648711293673496213_n.webp",
+                    name: "Signal Error Series",
+                  },
+                ].flatMap((item) => [item, item]).map((item, index) => (
+                  <div
+                    key={`${item.src}-${index}`}
+                    className="flex w-56 flex-shrink-0 flex-col overflow-hidden bg-surface-container-lowest"
+                  >
+                    <div className="relative h-32 w-full overflow-hidden">
+                      <Image
+                        src={item.src}
+                        alt={item.name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="border-t border-outline-variant/20 bg-surface-container-lowest px-3 py-2">
+                      <p className="font-label text-[10px] text-on-surface-variant">
+                        {item.name}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
