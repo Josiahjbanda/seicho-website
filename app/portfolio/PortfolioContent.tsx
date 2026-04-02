@@ -304,7 +304,7 @@ export function PortfolioContent() {
         )}
 
         {/* Smaller squares */}
-        {visibleSmallProjects.map((item, index) => (
+        {visibleSmallProjects.map((item) => (
           <article
             key={item.title}
             className="group relative cursor-pointer overflow-hidden bg-surface-container-lowest md:col-span-4"
