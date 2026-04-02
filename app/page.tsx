@@ -181,63 +181,98 @@ export default function Home() {
           id="portfolio"
           className="bg-surface px-8 py-24 md:px-24 md:py-32"
         >
-          <div className="mb-16 flex flex-col items-end gap-8 md:mb-24 md:flex-row md:justify-between">
-            <h2 className="max-w-2xl font-headline text-4xl italic tracking-tight md:text-6xl">
-              Selected <span className="text-secondary">Archives</span> 2024
-            </h2>
-            <p className="max-w-xs font-label text-[11px] leading-relaxed text-on-surface-variant">
-              Curated selection of our most impactful collaborations across
-              fashion, architecture, and luxury tech.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
-            <div className="group cursor-pointer bg-surface-container-low md:col-span-8">
-              <div className="relative aspect-[16/9] overflow-hidden bg-black">
-                <Image
-                  src="/images/portfolio.jpeg"
-                  alt="SEICHO brand strategy and portfolio overview"
-                  fill
-                  className="object-contain grayscale transition-transform duration-700 group-hover:scale-105"
-                />
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-14 flex flex-col gap-8 md:mb-20 md:flex-row md:items-end md:justify-between">
+              <div>
+                <p className="font-label mb-3 text-[10px] tracking-[0.2em] text-outline">
+                  PORTFOLIO PREVIEW
+                </p>
+                <h2 className="max-w-2xl font-headline text-4xl italic tracking-tight md:text-6xl">
+                  Selected <span className="text-secondary">Archives</span>{" "}
+                  2024
+                </h2>
               </div>
-              <div className="flex items-start justify-between pt-8">
-                <div>
-                  <span className="font-label mb-2 block text-[11px] text-secondary">
-                    Brand Strategy
-                  </span>
-                  <h3 className="font-headline text-2xl italic">
-                    The Ethereal Collective
-                  </h3>
+              <div className="max-w-md">
+                <p className="font-body text-sm leading-relaxed text-on-surface-variant">
+                  A curated look at branding, visual identity, and campaign
+                  design—crafted to help modern brands earn attention and build
+                  trust.
+                </p>
+                <div className="mt-6">
+                  <a
+                    href="/portfolio"
+                    className="inline-flex cursor-pointer items-center justify-center bg-primary px-8 py-4 font-label text-xs font-bold text-white transition-colors hover:bg-secondary"
+                  >
+                    Explore Full Portfolio
+                  </a>
                 </div>
               </div>
             </div>
 
-            <div className="group cursor-pointer md:col-span-4 md:mt-16">
-              <div className="relative aspect-[3/4] overflow-hidden bg-surface-container-lowest">
-                <Image
-                  src="/images/logo.jpeg"
-                  alt="SEICHO visual identity logo mark"
-                  fill
-                  className="object-contain transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-              <div className="pt-8">
-                <span className="font-label mb-2 block text-[11px] text-secondary">
-                  Visual Identity
-                </span>
-                <h3 className="font-headline text-2xl italic">Apex Atelier</h3>
-              </div>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
+              <a
+                href="/portfolio"
+                className="group relative cursor-pointer overflow-hidden border border-outline-variant/30 bg-surface-container-low md:col-span-8"
+                aria-label="View portfolio highlights"
+              >
+                <div className="relative aspect-[16/9] overflow-hidden bg-surface-container-lowest">
+                  <Image
+                    src="/images/portfolio.jpeg"
+                    alt="SEICHO brand strategy and portfolio overview"
+                    fill
+                    className="object-contain transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent opacity-90" />
+                </div>
+
+                <div className="flex flex-col gap-4 p-8 md:flex-row md:items-end md:justify-between">
+                  <div>
+                    <span className="font-label mb-2 block text-[11px] text-secondary">
+                      Brand Strategy
+                    </span>
+                    <h3 className="font-headline text-2xl italic md:text-3xl">
+                      The Ethereal Collective
+                    </h3>
+                    <p className="mt-3 max-w-xl font-body text-sm text-on-surface-variant">
+                      Strategy-led identity direction and campaign-ready visual
+                      systems designed for clarity, authority, and growth.
+                    </p>
+                  </div>
+
+                  <span className="mt-2 inline-flex w-fit items-center gap-2 font-label text-[10px] tracking-[0.2em] text-on-surface-variant transition-colors group-hover:text-on-surface">
+                    VIEW CASES <span className="text-secondary">↗</span>
+                  </span>
+                </div>
+              </a>
+
+              <a
+                href="/portfolio"
+                className="group cursor-pointer overflow-hidden border border-outline-variant/30 bg-surface-container-lowest md:col-span-4 md:mt-16"
+                aria-label="View visual identity work"
+              >
+                <div className="relative aspect-[3/4] overflow-hidden bg-white">
+                  <Image
+                    src="/images/logo.jpeg"
+                    alt="SEICHO visual identity logo mark"
+                    fill
+                    className="object-contain transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-8">
+                  <span className="font-label mb-2 block text-[11px] text-secondary">
+                    Visual Identity
+                  </span>
+                  <h3 className="font-headline text-2xl italic">Apex Atelier</h3>
+                  <p className="mt-3 font-body text-sm text-on-surface-variant">
+                    Logo-first identity work built to be recognizable across
+                    social, print, and digital touchpoints.
+                  </p>
+                  <span className="mt-6 inline-flex items-center gap-2 font-label text-[10px] tracking-[0.2em] text-on-surface-variant transition-colors group-hover:text-on-surface">
+                    VIEW WORK <span className="text-secondary">↗</span>
+                  </span>
+                </div>
+              </a>
             </div>
-          </div>
-          <div className="mt-20 flex justify-center">
-            <a
-              href="/portfolio"
-              className="group flex items-center space-x-5"
-            >
-              <span className="border-b-2 border-transparent text-xl font-headline italic group-hover:border-primary">
-                Explore Full Portfolio
-              </span>
-            </a>
           </div>
         </section>
 
