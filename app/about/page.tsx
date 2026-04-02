@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "SEICHO is a creative powerhouse dedicated to the architectural precision of marketing and editorial authority.",
+    "At SEICHO, creativity meets strategy to bring brands to life through design, branding, and social media marketing.",
 };
 
 export default function AboutPage() {
@@ -28,9 +28,8 @@ export default function AboutPage() {
             </div>
             <div className="md:col-span-4 pb-4">
               <p className="font-body text-lg leading-relaxed tracking-wide text-on-surface-variant">
-                SEICHO is a creative powerhouse dedicated to the architectural
-                precision of marketing. We treat every campaign as a high-value
-                artifact.
+                At SEICHO, creativity meets strategy to bring brands to life
+                through graphic design, branding, and social media marketing.
               </p>
             </div>
           </div>
@@ -56,71 +55,37 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-8 font-body text-lg leading-relaxed text-on-surface">
                 <p>
-                  Founded on the principles of editorial authority, SEICHO
-                  Marketing was born from a desire to strip away the noise of
-                  conventional advertising. We believe that clarity is the
-                  ultimate luxury. Our approach combines the meticulousness of
-                  print journalism with the agility of modern digital strategy.
+                  At SEICHO, creativity meets strategy to bring brands to life.
+                  Founded in 2022 at just 20 years old, SEICHO has grown into a
+                  dynamic creative studio specializing in graphic design, brand
+                  identity, illustrations, logo development, and full-scale
+                  social media marketing and management.
                 </p>
                 <p>
-                  We don&apos;t just manage brands. We archive their essence. By
-                  focusing on intentional asymmetry and high-contrast visual
-                  storytelling, we ensure our clients don&apos;t just stand
-                  out—they command the space they occupy.
+                  Driven by a passion for visual storytelling and innovation,
+                  SEICHO has delivered high-quality, impactful designs for a
+                  diverse range of clients - from small startups to established
+                  organizations such as MTC, UNAM, Namibia Nature Foundation,
+                  and Omeva Consulting. Each project is approached with
+                  precision, originality, and a deep understanding of how to
+                  communicate a brand’s message effectively.
+                </p>
+                <p>
+                  Beyond design, SEICHO offers strategic content creation and
+                  digital marketing solutions tailored to elevate brand
+                  presence, engage audiences, and drive real results. With a
+                  commitment to excellence and a keen eye for detail, SEICHO
+                  continues to push creative boundaries, helping businesses
+                  stand out in an increasingly competitive digital landscape.
                 </p>
                 <div className="pt-8">
                   <span className="font-label mb-2 block text-xs text-on-surface-variant">
                     Established
                   </span>
                   <span className="font-headline text-3xl font-bold">
-                    2020 — WINDHOEK
+                    2022 — WINDHOEK
                   </span>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Experience */}
-        <section className="mx-auto mb-32 max-w-7xl px-8">
-          <h2 className="mb-20 text-center font-headline text-5xl font-bold italic">
-            Professional Record
-          </h2>
-          <div className="divide-y divide-outline-variant/30">
-            <div className="group grid grid-cols-1 items-baseline gap-4 py-10 px-4 hover:bg-surface-container-high transition-colors md:grid-cols-12">
-              <div className="font-label text-sm font-bold tracking-tight text-secondary md:col-span-2">
-                2022 — PRESENT
-              </div>
-              <div className="font-headline text-2xl font-bold md:col-span-4">
-                Principal Creative
-              </div>
-              <div className="font-body text-on-surface-variant md:col-span-4">
-                Lead Strategy &amp; Brand Identity at SEICHO. Overseeing the
-                evolution of editorial design in digital spaces.
-              </div>
-            </div>
-            <div className="group grid grid-cols-1 items-baseline gap-4 py-10 px-4 hover:bg-surface-container-high transition-colors md:grid-cols-12">
-              <div className="font-label text-sm font-bold tracking-tight text-on-surface-variant md:col-span-2">
-                2018 — 2021
-              </div>
-              <div className="font-headline text-2xl font-bold md:col-span-4">
-                Senior Designer
-              </div>
-              <div className="font-body text-on-surface-variant md:col-span-4">
-                Focusing on high-end luxury retail branding and
-                typography-led campaigns for international clients.
-              </div>
-            </div>
-            <div className="group grid grid-cols-1 items-baseline gap-4 py-10 px-4 hover:bg-surface-container-high transition-colors md:grid-cols-12">
-              <div className="font-label text-sm font-bold tracking-tight text-on-surface-variant md:col-span-2">
-                2015 — 2018
-              </div>
-              <div className="font-headline text-2xl font-bold md:col-span-4">
-                Digital Strategist
-              </div>
-              <div className="font-body text-on-surface-variant md:col-span-4">
-                Developing multi-channel marketing ecosystems for emerging tech
-                startups and venture firms.
               </div>
             </div>
           </div>
@@ -144,41 +109,55 @@ export default function AboutPage() {
                   id: "01",
                   title: "Photoshop",
                   body: "Advanced manipulation & photo-editorial retouching.",
+                  mark: "Ps",
+                  iconSrc: "/images/tools/photoshop.png",
                 },
                 {
                   id: "02",
                   title: "Illustrator",
                   body: "Vector-perfect brand systems & structural iconography.",
+                  mark: "Ai",
+                  iconSrc: "/images/tools/illustrator.png",
                 },
                 {
                   id: "03",
                   title: "Figma",
                   body: "Interactive prototyping & design system orchestration.",
+                  mark: "Fg",
+                  iconSrc: "/images/tools/figma.png",
                 },
                 {
                   id: "04",
                   title: "InDesign",
                   body: "Layout architecture for luxury print & digital publications.",
+                  mark: "Id",
+                  iconSrc: "/images/tools/indesign.png",
                 },
                 {
                   id: "05",
                   title: "Strategy",
                   body: "Market positioning & growth-focused ecosystem mapping.",
+                  mark: "St",
                 },
                 {
                   id: "06",
                   title: "UI/UX",
                   body: "Human-centric interface logic & behavioral research.",
+                  mark: "UX",
+                  iconSrc: "/images/tools/uiux.png",
                 },
                 {
                   id: "07",
                   title: "After Effects",
                   body: "Dynamic brand motion & cinematic content sequences.",
+                  mark: "Ae",
+                  iconSrc: "/images/tools/after-effects.png",
                 },
                 {
                   id: "08",
                   title: "Copywriting",
                   body: "The editorial voice: persuasive, concise, and commanding.",
+                  mark: "CW",
                 },
               ].map((item) => (
                 <div
@@ -189,6 +168,19 @@ export default function AboutPage() {
                     {item.id}
                   </span>
                   <div>
+                    <div className="mb-6 inline-flex h-12 w-12 items-center justify-center border border-white/15 bg-black text-white">
+                      {item.iconSrc ? (
+                        <Image
+                          src={item.iconSrc}
+                          alt={`${item.title} logo`}
+                          width={34}
+                          height={34}
+                          className="h-8 w-8 object-contain"
+                        />
+                      ) : (
+                        <span className="font-bold">{item.mark}</span>
+                      )}
+                    </div>
                     <h3 className="mb-2 font-headline text-2xl">{item.title}</h3>
                     <p className="font-body text-sm text-white/70">
                       {item.body}

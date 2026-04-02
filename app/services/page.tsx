@@ -38,173 +38,135 @@ export default function ServicesPage() {
           </div>
         </header>
 
-        {/* Services Bento Grid */}
-        <section className="mx-auto max-w-7xl space-y-20 px-8">
-          {/* Logo Design */}
+        {/* Services */}
+        <section className="mx-auto max-w-7xl space-y-20 px-8 pb-24">
+          {/* Graphic Design & Branding */}
           <div className="grid grid-cols-1 overflow-hidden bg-surface-container-lowest md:grid-cols-12">
-            <div className="relative h-[320px] overflow-hidden md:col-span-7 md:h-auto">
-              <LogoCarousel />
-            </div>
-            <div className="flex flex-col justify-center border-l border-outline-variant/15 p-10 md:col-span-5">
-              <span className="font-label mb-6 text-xs text-secondary">
-                01 — Identity
-              </span>
-              <h2 className="font-headline text-4xl italic">Logo Design</h2>
-              <p className="mt-6 font-body text-on-surface-variant">
-                The cornerstone of your visual authority. We craft singular
-                marks that encapsulate your brand&apos;s DNA into a timeless,
-                scalable asset.
-              </p>
-              <ul className="mt-8 space-y-3 font-label text-[11px] text-primary">
-                <li className="flex items-center gap-3">
-                  <span className="h-1.5 w-1.5 bg-secondary" />
-                  Primary mark &amp; logotype
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="h-1.5 w-1.5 bg-secondary" />
-                  Symbolism research
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="h-1.5 w-1.5 bg-secondary" />
-                  Monochromatic versatility
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Branding */}
-          <div className="grid grid-cols-1 overflow-hidden bg-surface-container-lowest md:grid-cols-12">
-            <div className="order-2 flex flex-col justify-center border-r border-outline-variant/15 p-10 md:order-1 md:col-span-5">
-              <span className="font-label mb-6 text-xs text-secondary">
-                02 — Strategy
-              </span>
-              <h2 className="font-headline text-4xl italic">Branding</h2>
-              <p className="mt-6 font-body text-on-surface-variant">
-                Beyond the logo. We build comprehensive ecosystems including
-                typography, color theory, and tonal guidelines that ensure
-                absolute market consistency.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-2">
-                {["Style guides", "Brand voice", "Color systems"].map((chip) => (
-                  <span
-                    key={chip}
-                    className="bg-surface-container-highest px-4 py-2 text-[10px] font-label"
-                  >
-                    {chip}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="relative h-[320px] overflow-hidden order-1 md:order-2 md:col-span-7 md:h-auto">
+            <div className="relative h-[360px] overflow-hidden md:col-span-7 md:h-auto">
               <Image
                 src="/images/branding/470921052_18071970823723614_3376230561147877796_n.jpg"
                 alt="Seicho branding system"
                 fill
-                className="object-cover transition-transform duration-700 hover:scale-105"
+                className="object-cover"
               />
             </div>
-          </div>
-
-          {/* Marketing Materials */}
-          <div className="grid grid-cols-1 overflow-hidden bg-surface-container-lowest md:grid-cols-12">
-            <div className="relative h-[420px] overflow-hidden md:col-span-7 md:h-auto">
-              <MarketingCarousel />
-            </div>
             <div className="flex flex-col justify-center border-l border-outline-variant/15 p-10 md:col-span-5">
-              <span className="font-label mb-6 text-xs text-secondary">
-                03 — Collateral
-              </span>
               <h2 className="font-headline text-4xl italic">
-                Marketing Materials
+                Graphic Design &amp; Branding
               </h2>
               <p className="mt-6 font-body text-on-surface-variant">
-                High-value artifacts for high-stakes business. From investor
-                decks to premium editorial prints, we design for physical and
-                digital impact.
+                We provide high-quality, creative design solutions tailored to
+                both established brands and growing businesses.
               </p>
-              <button className="mt-8 inline-flex items-center gap-3 font-label text-[11px] text-primary">
-                View spec sheet
-              </button>
+              <p className="mt-4 font-label text-[11px] text-on-surface-variant">
+                Our services include:
+              </p>
+              <ul className="mt-4 space-y-2 font-body text-sm text-on-surface-variant">
+                <li>• Custom logo design (premium brands &amp; small business branding)</li>
+                <li>• Full brand identity development (colors, typography, brand guidelines)</li>
+                <li>• Clothing brand design (streetwear, merchandise, apparel graphics)</li>
+                <li>• Marketing materials (posters, flyers, banners, brochures)</li>
+                <li>• Book covers and layout design</li>
+                <li>• Digital illustrations and custom artwork</li>
+                <li>• Business profiles and company portfolios</li>
+                <li>• Packaging design</li>
+              </ul>
             </div>
           </div>
-        </section>
 
-        {/* Pricing */}
-        <section className="mt-32 bg-surface-container-low py-32">
-          <div className="mx-auto max-w-7xl px-8">
-            <div className="mb-16 text-center">
-              <h2 className="font-headline text-4xl italic md:text-5xl">
-                Investment Tiers
+          {/* Social Media Marketing & Management */}
+          <div className="grid grid-cols-1 overflow-hidden bg-surface-container-lowest md:grid-cols-12">
+            <div className="order-2 flex flex-col justify-center border-r border-outline-variant/15 p-10 md:order-1 md:col-span-5">
+              <h2 className="font-headline text-4xl italic">
+                Social Media Marketing &amp; Management
               </h2>
-              <div className="mx-auto mt-4 h-1 w-24 bg-secondary" />
+              <p className="mt-6 font-body text-on-surface-variant">
+                We help businesses build a strong online presence and turn
+                followers into customers through strategic content and
+                campaigns.
+              </p>
+              <p className="mt-4 font-label text-[11px] text-on-surface-variant">
+                Our services include:
+              </p>
+              <ul className="mt-4 space-y-2 font-body text-sm text-on-surface-variant">
+                <li>• Social media account management (Instagram, Facebook, TikTok, etc.)</li>
+                <li>• Content creation (graphics, captions, reels concepts)</li>
+                <li>• Social media communication campaigns (promotions, launches, awareness)</li>
+                <li>• Monthly content planning and scheduling</li>
+                <li>• Audience engagement and page growth strategies</li>
+                <li>• Paid advertising (Facebook &amp; Instagram ads setup and management)</li>
+                <li>• Brand positioning and messaging strategy</li>
+                <li>• Performance tracking and reporting</li>
+              </ul>
             </div>
-            <div className="grid grid-cols-1 border border-outline-variant/15 md:grid-cols-3">
-              {/* Essential */}
-              <div className="flex flex-col bg-surface-container-lowest p-10 md:border-r md:border-outline-variant/15">
-                <span className="font-label mb-2 text-[10px] text-on-surface-variant">
-                  Tier 01
-                </span>
-                <h3 className="font-headline text-2xl italic">Essential</h3>
-                <div className="mt-6 font-sans text-4xl font-black">
-                  $2,500
-                  <span className="ml-2 text-sm font-normal text-on-surface-variant">
-                    / flat
-                  </span>
-                </div>
-                <ul className="mt-8 flex-grow space-y-4 font-body text-sm">
-                  <li>Primary logo suite</li>
-                  <li>Core color palette</li>
-                  <li className="text-on-surface-variant/50 line-through">
-                    Full brand guidelines
-                  </li>
-                </ul>
-                <button className="mt-8 w-full border border-primary py-3 font-label text-[11px] hover:bg-primary hover:text-white">
-                  Select tier
-                </button>
-              </div>
-              {/* Professional */}
-              <div className="flex flex-col bg-primary p-10 text-white shadow-2xl md:scale-105">
-                <span className="font-label mb-2 text-[10px] text-white/70">
-                  Tier 02 — Recommended
-                </span>
-                <h3 className="font-headline text-2xl italic">Professional</h3>
-                <div className="mt-6 font-sans text-4xl font-black">
-                  $5,500
-                  <span className="ml-2 text-sm font-normal text-white/70">
-                    / flat
-                  </span>
-                </div>
-                <ul className="mt-8 flex-grow space-y-4 font-body text-sm">
-                  <li>Logo &amp; typography system</li>
-                  <li>Digital style guide</li>
-                  <li>3 marketing assets</li>
-                </ul>
-                <button className="mt-8 w-full bg-secondary py-3 font-label text-[11px] hover:bg-secondary-container">
-                  Select tier
-                </button>
-              </div>
-              {/* Enterprise */}
-              <div className="flex flex-col bg-surface-container-lowest p-10 md:border-l md:border-outline-variant/15">
-                <span className="font-label mb-2 text-[10px] text-on-surface-variant">
-                  Tier 03
-                </span>
-                <h3 className="font-headline text-2xl italic">Enterprise</h3>
-                <div className="mt-6 font-sans text-4xl font-black">
-                  Custom
-                  <span className="ml-2 text-sm font-normal text-on-surface-variant">
-                    / quote
-                  </span>
-                </div>
-                <ul className="mt-8 flex-grow space-y-4 font-body text-sm">
-                  <li>Full brand ecosystem</li>
-                  <li>Strategic positioning</li>
-                  <li>Unlimited collateral</li>
-                </ul>
-                <button className="mt-8 w-full border border-primary py-3 font-label text-[11px] hover:bg-primary hover:text-white">
-                  Inquire
-                </button>
-              </div>
+            <div className="relative h-[420px] overflow-hidden order-1 md:order-2 md:col-span-7 md:h-auto">
+              <MarketingCarousel />
             </div>
+          </div>
+
+          {/* Website Design (Basic) */}
+          <div className="grid grid-cols-1 overflow-hidden bg-surface-container-lowest md:grid-cols-12">
+            <div className="relative h-[360px] overflow-hidden md:col-span-7 md:h-auto">
+              <Image
+                src="/images/portfolio.jpeg"
+                alt="Website design preview"
+                fill
+                className="object-contain bg-black"
+              />
+            </div>
+            <div className="flex flex-col justify-center border-l border-outline-variant/15 p-10 md:col-span-5">
+              <h2 className="font-headline text-4xl italic">
+                Website Design (Basic)
+              </h2>
+              <p className="mt-6 font-body text-on-surface-variant">
+                We create clean, modern, and functional websites for businesses
+                looking to establish an online presence.
+              </p>
+              <p className="mt-4 font-label text-[11px] text-on-surface-variant">
+                Our services include:
+              </p>
+              <ul className="mt-4 space-y-2 font-body text-sm text-on-surface-variant">
+                <li>• Basic business websites (informational sites)</li>
+                <li>• Landing pages for campaigns or promotions</li>
+                <li>• Mobile-friendly design</li>
+                <li>• Integration with social media platforms</li>
+                <li>• Basic SEO setup</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Content Creation */}
+          <div className="grid grid-cols-1 overflow-hidden bg-surface-container-lowest md:grid-cols-12">
+            <div className="order-2 flex flex-col justify-center border-r border-outline-variant/15 p-10 md:order-1 md:col-span-5">
+              <h2 className="font-headline text-4xl italic">Content Creation</h2>
+              <p className="mt-6 font-body text-on-surface-variant">
+                We create engaging content that captures attention and
+                represents your brand professionally.
+              </p>
+              <p className="mt-4 font-label text-[11px] text-on-surface-variant">
+                Our services include:
+              </p>
+              <ul className="mt-4 space-y-2 font-body text-sm text-on-surface-variant">
+                <li>• Social media visuals (posts, reels concepts, story designs)</li>
+                <li>• Promotional content</li>
+                <li>• Brand-focused content for marketing campaigns</li>
+                <li>• Creative direction for shoots and visuals</li>
+              </ul>
+            </div>
+            <div className="relative h-[320px] overflow-hidden order-1 md:order-2 md:col-span-7 md:h-auto">
+              <LogoCarousel />
+            </div>
+          </div>
+
+          {/* Additional Services */}
+          <div className="bg-surface-container-lowest p-10">
+            <h2 className="font-headline text-4xl italic">Additional Services</h2>
+            <ul className="mt-6 space-y-2 font-body text-sm text-on-surface-variant">
+              <li>• Marketing strategy and consultation</li>
+              <li>• Campaign planning and execution</li>
+              <li>• Business profile development</li>
+              <li>• Creative direction for brands</li>
+            </ul>
           </div>
         </section>
       </main>
