@@ -246,7 +246,7 @@ export default function Home() {
           <div className="mx-auto max-w-7xl">
             <div className="mb-8 flex items-baseline justify-between">
               <h2 className="font-headline text-2xl italic md:text-3xl">
-                Trusted by ambitious clients.
+                Notable clients.
               </h2>
               <p className="hidden font-label text-[10px] text-on-surface-variant md:block">
                 Selected marketing and design partnerships
@@ -300,9 +300,17 @@ export default function Home() {
 
             <div className="grid grid-cols-2 gap-6 text-sm text-on-surface-variant md:grid-cols-3">
               {[
-                { label: "Adobe Photoshop", mark: "Ps" },
-                { label: "Adobe Illustrator", mark: "Ai" },
-                { label: "Figma", mark: "Fg" },
+                {
+                  label: "Adobe Photoshop",
+                  mark: "Ps",
+                  iconSrc: "/images/tools/photoshop.png",
+                },
+                {
+                  label: "Adobe Illustrator",
+                  mark: "Ai",
+                  iconSrc: "/images/tools/illustrator.png",
+                },
+                { label: "Figma", mark: "Fg", iconSrc: "/images/tools/figma.png" },
                 { label: "Adobe Premiere Pro", mark: "Pr" },
                 { label: "Canva", mark: "Ca" },
                 { label: "Marketing & Analytics", mark: "Mx" },
@@ -311,8 +319,18 @@ export default function Home() {
                   key={tool.label}
                   className="flex items-center gap-3 bg-surface-container-lowest px-4 py-3"
                 >
-                  <span className="inline-flex h-10 w-10 items-center justify-center border border-outline-variant/30 bg-black text-white font-bold">
-                    {tool.mark}
+                  <span className="inline-flex h-10 w-10 items-center justify-center border border-outline-variant/30 bg-white text-on-surface">
+                    {"iconSrc" in tool && tool.iconSrc ? (
+                      <Image
+                        src={tool.iconSrc}
+                        alt={`${tool.label} logo`}
+                        width={28}
+                        height={28}
+                        className="h-7 w-7 object-contain"
+                      />
+                    ) : (
+                      <span className="font-bold">{tool.mark}</span>
+                    )}
                   </span>
                   <span className="font-body">{tool.label}</span>
                 </div>

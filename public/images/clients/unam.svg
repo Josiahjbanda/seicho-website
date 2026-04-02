@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#000"/>
+  <g fill="#fff">
+    <text x="80" y="360" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="150" font-weight="800" letter-spacing="8">UNAM</text>
+    <text x="82" y="425" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="32" font-weight="600" opacity="0.6" letter-spacing="6">CLIENT</text>
+  </g>
+</svg>

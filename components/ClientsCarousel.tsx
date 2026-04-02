@@ -5,24 +5,20 @@ import { useEffect, useRef, useState } from "react";
 
 const CLIENTS = [
   {
-    src: "/images/heros/WhatsApp Image 2026-04-02 at 12.29.15 AM.jpeg",
-    name: "VR Experience",
+    src: "/images/clients/mtc.png",
+    name: "MTC",
   },
   {
-    src: "/images/464820507_18067077709723614_5839465353225522232_n.webp",
-    name: "FEDAM Prints",
+    src: "/images/clients/unam.png",
+    name: "UNAM",
   },
   {
-    src: "/images/620962502_17996234417907389_757090051739280617_n.webp",
-    name: "UNAM SRC",
+    src: "/images/clients/namibia-nature-foundation.png",
+    name: "Namibia Nature Foundation",
   },
   {
-    src: "/images/heros/WhatsApp Image 2026-04-02 at 12.29.17 AM.jpeg",
-    name: "Booklet",
-  },
-  {
-    src: "/images/heros/WhatsApp Image 2026-04-02 at 12.29.16 AM.jpeg",
-    name: "Rand street car wash",
+    src: "/images/clients/omeva-consulting.png",
+    name: "Omeva Consulting",
   },
 ];
 
@@ -61,12 +57,12 @@ export function ClientsCarousel() {
             className="flex w-56 flex-shrink-0 cursor-pointer flex-col overflow-hidden bg-surface-container-lowest text-left"
             aria-label={`View ${client.name}`}
           >
-            <div className="relative h-32 w-full overflow-hidden">
+            <div className="relative h-32 w-full overflow-hidden bg-white">
               <Image
                 src={client.src}
                 alt={client.name}
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
             <div className="border-t border-outline-variant/20 bg-surface-container-lowest px-3 py-2">
@@ -87,10 +83,10 @@ export function ClientsCarousel() {
           onClick={() => setActive(null)}
         >
           <div
-            className="relative w-full max-w-4xl overflow-hidden bg-black"
+            className="relative w-full max-w-4xl overflow-hidden bg-white"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative aspect-[16/9] w-full bg-black">
+            <div className="relative aspect-[16/9] w-full bg-white">
               <Image
                 src={active.src}
                 alt={active.name}
