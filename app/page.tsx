@@ -152,7 +152,7 @@ export default function Home() {
                 <ul className="space-y-2 text-sm text-on-surface-variant">
                   <li>• Short-form video content</li>
                   <li>• Promotional visuals</li>
-                  <li>• Brand storytelling</li>
+                  <li>• Branding</li>
                   <li>• Campaign content production</li>
                 </ul>
               </div>
